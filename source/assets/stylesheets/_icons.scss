@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'icomoon';
+  src:url('/assets/fonts/icomoon.eot');
+  src:url('/assets/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/icomoon.svg#icomoon') format('svg'),
+    url('/assets/fonts/icomoon.woff') format('woff'),
+    url('/assets/fonts/icomoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-only {
+  text-indent: -9999px;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    text-indent: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -.5em;
+  }
+}
+
+.icon-ampersand:before, .icon-leaf:before, .icon-happy:before, .icon-drink:before, .icon-cake:before, .icon-drink-2:before, .icon-position:before, .icon-clock:before, .icon-gift:before, .icon-heart:before, .icon-location:before, .icon-rain:before, .icon-sun:before, .icon-aids:before, .icon-diamond:before, .icon-pictures:before, .icon-car:before, .icon-engagement-ring:before, .icon-phone:before, .icon-close:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-ampersand:before          { content: "\26"; }
+.icon-leaf:before               { content: "\1f343"; }
+.icon-happy:before              { content: "\263a"; }
+.icon-drink:before              { content: "\1f378"; }
+.icon-cake:before               { content: "\1f382"; }
+.icon-drink-2:before            { content: "\1f379"; }
+.icon-position:before           { content: "\2609"; }
+.icon-time:before               { content: "\1f553"; }
+.icon-gift:before               { content: "\1f381"; }
+.icon-heart:before              { content: "\2764"; }
+.icon-directions:before         { content: "\e00a"; }
+.icon-location:before           { content: "\e00d"; }
+.icon-rain:before               { content: "\2601"; }
+.icon-sun:before                { content: "\2600"; }
+.icon-aids:before               { content: "\e011"; }
+.icon-male:before               { content: "\2642"; }
+.icon-female:before             { content: "\2640"; }
+.icon-diamond:before            { content: "\1f48e"; }
+.icon-pictures:before           { content: "\e015"; }
+.icon-car:before                { content: "\1f698"; }
+.icon-engagement-ring:before    { content: "\1f48d"; }
+.icon-phone:before              { content: "\1f4de"; }
+.icon-close:before             { content: "\d7"; }
+
+

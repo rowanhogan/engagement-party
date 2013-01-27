@@ -1,0 +1,28 @@
+---
+title: Madeleine & Rowan are getting married.
+---
+
+%h1.title.icon-engagement-ring
+  %span.madeleine Madeleine
+  %span.amp.icon-ampersand.icon-only &amp;
+  %span.rowan Rowan
+  %em.subtitle are getting married.
+
+.box
+  %p
+    Please join us to celebrate our engagement on
+    %em.date 09 &middot; 03 &middot; 13
+    for a picnic in the park.
+
+  %dl
+    %dt Location
+    %dd= link_to data.info.location.name, '#map', id: 'map-link', data: { coords: data.info.location.latlng }
+
+    %dt Time
+    %dd= data.info[:time]
+
+
+.map-box
+  #map
+  #map-close.icon-close
+
