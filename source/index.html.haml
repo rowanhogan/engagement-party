@@ -14,15 +14,19 @@ title: Madeleine & Rowan are getting married.
     %em.date 09 &middot; 03 &middot; 13
     for a picnic in the park.
 
+  %p= "Please bring a plate of food to share and a picnic blanket or some chairs."
+
+  %p= "If it looks like it might rain, please check this website for the alternative venue or message Maddie (0422 397 150) or Rowan (0433 901 550)."
+
   %dl
     %dt Location
-    %dd= link_to data.info.location.name, '#map', id: 'map-link', data: { coords: data.info.location.latlng }
+    %dd= link_to data.info.location.name, '#map', id: 'map-link', data: { coords: data.info.location.latlng }, title: 'Show map of location'
 
     %dt Time
     %dd= data.info[:time]
 
+    %p.icon-ribbon
 
 .map-box
   #map
-  #map-close.icon-close
-
+  = link_to 'Close Map', '#close', id: 'map-close' , class: 'icon-close icon-only', title: 'Close map'
