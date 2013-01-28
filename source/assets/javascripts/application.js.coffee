@@ -1,11 +1,6 @@
 #= require 'jquery'
-#= require_tree './templates'
 
 $ ->
-
-  # Example template
-  # $("#twitter").append JST["templates/tweet"](data)
-
   $('html').removeClass 'no-js'
 
 $(document).on 'click', '#map-link', (e) ->
