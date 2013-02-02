@@ -20,13 +20,15 @@ title: Madeleine & Rowan are getting married.
 
   %dl
     %dt Location
-    %dd= link_to data.info.location.name, '#map', id: 'map-link', data: { coords: data.info.location.latlng }, title: 'Show map of location'
+    %dd= link_to data.info.location.name, 'http://a.tiles.mapbox.com/v3/rowanhogan.map-7belist9.html#16.00/-27.4705/153.0532', id: 'map-link', data: { coords: data.info.location.latlng }, title: 'Show map of location'
 
     %dt Time
     %dd= data.info[:time]
 
+    .map= image_tag 'map.png'
+
     %p.icon-diamond
 
-.map-box
-  #map
-  = link_to 'Close Map', '#close', id: 'map-close' , class: 'icon-close icon-only', title: 'Close map'
+-# .map-box
+-#   #map
+-#   = link_to 'Close Map', '#close', id: 'map-close' , class: 'icon-close icon-only', title: 'Close map'
