@@ -77,9 +77,11 @@ dd {
 }
 
 
-.ie9 .title {
-  &:before {
-    margin-top: -.33em;
+.ie9 {
+  .title {
+    &:before {
+      margin-top: -.33em;
+    }
   }
 }
 

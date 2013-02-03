@@ -1,12 +1,12 @@
 ---
-title: Madeleine & Rowan are getting married.
+title: Madeleine & Rowan are engaged.
 ---
 
 %h1.title.icon-engagement-ring
   %span.madeleine Madeleine
   %span.amp.icon-ampersand.icon-only &amp;
   %span.rowan Rowan
-  %em.subtitle are getting married.
+  %em.subtitle are engaged.
 
 .box
   %p
@@ -25,7 +25,7 @@ title: Madeleine & Rowan are getting married.
     %dt Time
     %dd= data.info[:time]
 
-    .map= image_tag 'map.png'
+    = link_to image_tag('map.png'), 'http://a.tiles.mapbox.com/v3/rowanhogan.map-7belist9.html#16.00/-27.4705/153.0532', title: 'New Farm park, Brisbane', class: 'map'
 
     %p.icon-diamond
 
