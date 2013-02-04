@@ -5,12 +5,14 @@ html {
 
 body {
   display: block;
-  background: url(#{$images-path}/grass.jpg) no-repeat center;
+  background: hsl(85, 90%, 35%) no-repeat center;
+  background-image: -webkit-radial-gradient(center, rgba(black, 0), rgba(black, 0.35));
+  background-image: url(#{$images-path}/grass.jpg);
   @include background-size(cover);
 
   @media screen and (max-device-width: 1024px) {
     .title { font-size: 1.5em; }
-    background: url(#{$images-path}/grass-small.jpg) no-repeat center;
+    background-image: url(#{$images-path}/grass-small.jpg);
   }
 }
 
@@ -83,7 +85,7 @@ body {
 // }
 
 .ie6, .ie7, .ie8 {
-  body { background: url(#{$images-path}/grass-small.jpg) no-repeat center; }
+  body { background-image: url(#{$images-path}/grass-small.jpg); }
 }
 
 .ie6, .ie7 {
