@@ -12,22 +12,22 @@ title: Madeleine & Rowan are engaged.
   %p
     Please join us to celebrate our engagement on
     %em.date 09 &middot; 03 &middot; 13
-    for a picnic in the park.
+    for a picnic <del>in the park</del> indoors.
 
-  %p= "Please bring a plate of food to share and a picnic blanket or some chairs."
+  %p= "Please bring a plate of food to share."
 
-  %p= "If it looks like it might rain, please check this website for the alternative venue or message Maddie (0422 397 150) or Rowan (0433 901 550)."
+  %p= "As it looks like it will rain (or perhaps flood, again), please check this website for the updated venue or message Maddie (0422 397 150) or Rowan (0433 901 550)."
 
-  %dl
+  %dl{style: 'margin: 1em 0 2em;'}
     %dt Location
-    %dd= link_to data.info.location.name, 'http://a.tiles.mapbox.com/v3/rowanhogan.map-7belist9.html#16.00/-27.4705/153.0532', id: 'map-link', data: { coords: data.info.location.latlng }, title: 'Show map of location'
+    %dd= data.info.location.name
 
     %dt Time
     %dd= data.info[:time]
 
-    = link_to image_tag('map.png'), 'http://a.tiles.mapbox.com/v3/rowanhogan.map-7belist9.html#16.00/-27.4705/153.0532', title: 'New Farm park, Brisbane', class: 'map'
+    -# = link_to image_tag('map.png'), 'http://a.tiles.mapbox.com/v3/rowanhogan.map-7belist9.html#16.00/-27.4705/153.0532', title: 'New Farm park, Brisbane', class: 'map'
 
-    %p.icon-diamond
+  %p.icon-diamond
 
 -# .map-box
 -#   #map
