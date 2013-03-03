@@ -5,12 +5,14 @@ html {
 
 body {
   display: block;
-  background: coral no-repeat center;
+  background: hsl(85, 90%, 35%) no-repeat center;
   background-image: -webkit-radial-gradient(center, rgba(black, 0), rgba(black, 0.35));
+  background-image: url(#{$images-path}/rain.jpg);
   @include background-size(cover);
 
   @media screen and (max-device-width: 1024px) {
     .title { font-size: 1.5em; }
+    background-image: url(#{$images-path}/rain-small.jpg);
   }
 }
 
@@ -82,6 +84,9 @@ body {
 //   cursor: pointer;
 // }
 
+.ie6, .ie7, .ie8 {
+  body { background-image: url(#{$images-path}/rain-small.jpg); }
+}
 
 .ie6, .ie7 {
   .title {
