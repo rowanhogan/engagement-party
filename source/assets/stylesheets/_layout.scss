@@ -5,7 +5,7 @@ html {
 
 body {
   display: block;
-  background: hsl(85, 90%, 35%) no-repeat center;
+  background: hsl(100, 15%, 30%) no-repeat center;
   background-image: -webkit-radial-gradient(center, rgba(black, 0), rgba(black, 0.35));
   background-image: url(#{$images-path}/rain.jpg);
   @include background-size(cover);
