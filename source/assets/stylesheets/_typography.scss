@@ -33,6 +33,7 @@ body {
 
 .date {
   display: block;
+  font-style: normal;
   font-size: 1.5em;
   margin: .5em 0;
 }
@@ -43,6 +44,14 @@ a {
 
 p {
   margin: 0 auto 1em;
+}
+
+em {
+  font-style: italic;
+}
+
+dl {
+  margin: 2em 0;
 }
 
 dt { font-weight: bold; }

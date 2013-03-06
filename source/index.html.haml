@@ -12,23 +12,28 @@ title: Madeleine & Rowan are engaged.
   %p
     Please join us to celebrate our engagement on
     %em.date 09 &middot; 03 &middot; 13
-    for a picnic <del>in the park</del> indoors.
+    for an <del>underwater</del> undercover picnic.
 
-  %p= "Please bring a plate of food to share."
+  %p= "Please bring a plate of food to share (there will be limited cooking facilities). Also some chairs if you can."
 
-  %p= "As it looks like it will rain (or perhaps flood, again), please check this website for the updated venue or message Maddie (0422 397 150) or Rowan (0433 901 550)."
+  %p= "As it looks like it will rain (or perhaps flood, <em>again</em>) we have moved the venue to a large undercover space at Wilston State School."
 
-  %dl{style: 'margin: 1em 0 2em;'}
+  %p="We plan to head to <a href='http://www.scratchbar.com/'>The Scratch</a> afterwards if you are able to join us. If you have any questions, get lost, or just want to say hello: Contact Maddie (0422 397 150) or Rowan (0433 901 550)."
+
+
+  %dl
     %dt Location
-    %dd= data.info.location.name
+    %dd
+      = data.info.location.name
+      %br
+      = data.info.location.details
 
     %dt Time
     %dd= data.info[:time]
 
-    -# = link_to image_tag('map.png'), 'http://a.tiles.mapbox.com/v3/rowanhogan.map-7belist9.html#16.00/-27.4705/153.0532', title: 'New Farm park, Brisbane', class: 'map'
+  .map-container{ title: "Map of #{data.info.location.name}" }
+    %iframe{ width: '256', height:'256', frameBorder:'0', src:'http://a.tiles.mapbox.com/v3/rowanhogan.map-7belist9.html#16/-27.42805236502018/153.01529959259034'}
+    = image_tag 'map-container.png', class: 'map-container-image'
+    = link_to 'Map', 'http://tiles.mapbox.com/rowanhogan/map/map-7belist9', class: 'map-link'
 
   %p.icon-diamond
-
--# .map-box
--#   #map
--#   = link_to 'Close Map', '#close', id: 'map-close' , class: 'icon-close icon-only', title: 'Close map'
