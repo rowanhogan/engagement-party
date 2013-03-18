@@ -78,3 +78,26 @@ body {
     overflow: hidden;
   }
 }
+
+
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: coral;
+  background: rgba(coral, .85);
+  z-index: 2000;
+
+  p {
+    position: fixed;
+    top: 50%;
+    left: 2em;
+    right: 2em;
+    text-align: center;
+    line-height: 1.5em;
+    margin-top: -3.5em;
+    font-size: 1.75em;
+  }
+}
